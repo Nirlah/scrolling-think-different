@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Crimson";
+  src: url(fonts/CrimsonText-Roman.ttf); }
+
+@font-face {
+  font-family: "Crimson";
+  src: url(fonts/CrimsonText-Bold.ttf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Crimson";
+  src: url(fonts/CrimsonText-Italic.ttf);
+  font-style: italic; }
+
+body {
+  font-family: "Crimson";
+  -webkit-user-select: none;
+  cursor: default; }
+
+story {
+  width: 100vw;
+  height: auto; }
+
+scene {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+  clip: rect(auto, auto, auto, auto); }
+  scene.no-clip {
+    clip: auto; }
+  scene.sticky {
+    position: fixed;
+    top: 0 !important; }
+  scene.futura {
+    font-family: "Futura Std";
+    font-size: 14pt; }
+
+#scene-1 {
+  z-index: 10; }
+
+#scene-2 {
+  z-index: 20; }
+
+#scene-3 {
+  z-index: 30; }
+
+#scene-4 {
+  z-index: 40; }
+
+#scene-5 {
+  z-index: 50; }
+
+#scene-6 {
+  z-index: 60; }
+
+#scene-7 {
+  z-index: 70; }
+
+#scene-8 {
+  z-index: 80; }
+
+#scene-9 {
+  z-index: 90; }
+
+#scene-10 {
+  z-index: 100; }
+
+#scene-11 {
+  z-index: 110; }
+
+#scene-12 {
+  z-index: 120; }
+
+#scene-13 {
+  z-index: 130; }
+
+#scene-14 {
+  z-index: 140; }
+
+#scene-15 {
+  z-index: 150; }
+
+#scene-16 {
+  z-index: 160; }
+
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#scene-2 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 200vh; }
+
+#scene-3 span {
+  color: red;
+  -webkit-background-clip: text; }
+
+#text-5-b {
+  width: 350px;
+  height: 350px;
+  background-image: url(images/square.svg);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #text-5-b #text-5-a {
+    width: 200px;
+    height: 200px;
+    background-image: url(images/circle.svg);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    color: black; }
+
+#scene-6 {
+  color: white;
+  background-color: black; }
+  #scene-6 span {
+    letter-spacing: 0.5pt; }
+
+#scene-9 {
+  flex-direction: column; }
+  #scene-9 span.text-9 {
+    line-height: 2;
+    opacity: 0; }
+  #scene-9 #text-9-a {
+    background-image: linear-gradient(to right, black 0%, white 0%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+  #scene-9 #text-9-b-line {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -5px;
+    display: block; }
+  #scene-9 #text-9-c-mark {
+    content: "";
+    background-color: yellow;
+    height: 27px;
+    width: 0;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: -7px;
+    display: block; }
+  #scene-9 #text-9-c-content {
+    z-index: 95;
+    position: relative; }
+  #scene-9 #text-9-d span {
+    display: inline-block; }
+
+#scene-12 {
+  color: white;
+  background-color: black;
+  background-image: url(images/moon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-weight: lighter; }
+  #scene-12 span {
+    letter-spacing: 0.5pt;
+    z-index: 121; }
+  #scene-12 img {
+    position: fixed;
+    top: 20%; }
+
+#scene-13 {
+  overflow: hidden;
+  z-index: 140; }
+
+#sc-13-bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background-image: url("images/crazy-albert.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%; }
+
+.photograph {
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white; }
+  .photograph .square {
+    width: 260px;
+    height: 260px;
+    margin: 20px 0 25px 20px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.13);
+    overflow: hidden; }
+  .photograph span {
+    font-family: "Marker Felt";
+    color: #1e1e1e; }
+  .photograph.big {
+    width: 390px;
+    height: 455px;
+    box-shadow: 0 26px 78px 0 rgba(0, 0, 0, 0.13); }
+    .photograph.big .square {
+      width: 338px;
+      height: 338px;
+      margin: 26px 0 36px 26px; }
+    .photograph.big span {
+      font-size: 22px; }
+  .photograph.small {
+    width: 240px;
+    height: 280px;
+    box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.08); }
+    .photograph.small .square {
+      width: 208px;
+      height: 208px;
+      margin: 16px 0 19px 16px; }
+    .photograph.small span {
+      font-size: 18px; }
+
+#scene-14 {
+  z-index: 130; }
+  #scene-14 .photograph {
+    top: -120px;
+    position: relative; }
+
+#text-14 {
+  position: fixed;
+  bottom: 80px; }
+
+#scene-15 {
+  clip: auto; }
+  #scene-15 .photograph {
+    position: absolute; }
+    #scene-15 .photograph.small {
+      z-index: 151; }
+    #scene-15 .photograph.default {
+      z-index: 153; }
+    #scene-15 .photograph.big {
+      z-index: 159; }
+
+#text-15 {
+  position: absolute;
+  top: 60px;
+  z-index: 155; }
+
+#prsn-1 {
+  margin-left: -18vw;
+  margin-top: -65vh; }
+
+#prsn-2 {
+  margin-left: 18vw;
+  margin-top: 100vh; }
+
+#prsn-3 {
+  margin-left: -35vw;
+  margin-top: -124vh; }
+
+#prsn-4 {
+  margin-left: 32vw;
+  margin-top: -110vh; }
+
+#prsn-5 {
+  margin-left: 18vw;
+  margin-top: -45vh; }
+
+#prsn-6 {
+  margin-left: -18vw;
+  margin-top: 20vh; }
+
+#prsn-7 {
+  margin-left: 36vw;
+  margin-top: 38vh; }
+
+#prsn-8 {
+  margin-left: -36vw;
+  margin-top: 90vh; }
+
+#prsn-9 {
+  margin-left: -2vw;
+  margin-top: 118vh; }
+
+#prsn-10 {
+  margin-left: 3vw;
+  margin-top: -110vh; }
+
+#prsn-11 {
+  margin-left: -34vw;
+  margin-top: -7vh; }
+
+#prsn-12 {
+  margin-left: 5vw;
+  margin-top: 8vh; }
+
+#prsn-13 {
+  margin-left: 32vw;
+  margin-top: -14vh; }
+
+#prsn-14 {
+  margin-left: -12vw;
+  margin-top: 65vh; }
+
+#prsn-15 {
+  margin-left: -30vw;
+  margin-top: 132vh; }
+
+#prsn-16 {
+  margin-left: 37vw;
+  margin-top: 128vh; }
+
+#scene-16 .photograph {
+  width: 450px;
+  height: 525px;
+  box-shadow: 0 30px 90px 0 rgba(0, 0, 0, 0.15);
+  transform: rotateZ(-3deg);
+  margin-top: 80px; }
+  #scene-16 .photograph .square {
+    width: 390px;
+    height: 390px;
+    margin: 30px 0 40px 30px; }
+  #scene-16 .photograph span {
+    font-size: 22px; }
+
+#scene-16 #attribution {
+  position: absolute;
+  display: block;
+  bottom: 26px;
+  right: 56px;
+  font-family: "Crimson"; }
+
+#text-16 {
+  position: fixed;
+  top: 60px; }
+
+#video-me {
+  transform: scaleX(-1);
+  height: 390px;
+  margin: 0 auto;
+  margin-left: -65px;
+  filter: grayscale(100%); }
