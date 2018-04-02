@@ -12,6 +12,15 @@
   src: url(fonts/CrimsonText-Italic.ttf);
   font-style: italic; }
 
+@font-face {
+  font-family: "Futura";
+  src: url("fonts/Futura Book.ttf"); }
+
+@font-face {
+  font-family: "Futura";
+  src: url("fonts/Futura Book Italic.ttf");
+  font-style: italic; }
+
 body {
   font-family: "Crimson";
   -webkit-user-select: none;
@@ -36,7 +45,7 @@ scene {
     position: fixed;
     top: 0 !important; }
   scene.futura {
-    font-family: "Futura Std";
+    font-family: "Futura";
     font-size: 14pt; }
 
 #scene-1 {
